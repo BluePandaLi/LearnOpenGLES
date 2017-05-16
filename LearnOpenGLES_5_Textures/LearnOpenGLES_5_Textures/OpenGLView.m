@@ -19,11 +19,13 @@
     
     GLuint _positionSlot;
     GLuint _colorSlot;
-    GLuint _textureSlot;
+    GLuint _textureSlot_1;
+    GLuint _textureSlot_2;
     GLuint _textureCoord;
     
     GLuint _vertexArrayObject;
-    GLuint _texture;
+    GLuint _texture_1;
+    GLuint _texture_2;
 }
 
 GLfloat vertices[] = {
@@ -144,7 +146,13 @@ GLuint indices[] = {  // Note that we start from 0!
     //你的标准化设备坐标接着会变换为屏幕空间坐标(Screen-space Coordinates)，这是使用你通过glViewport函数提供的数据，进行视口变换(Viewport Transform)完成的。所得的屏幕空间坐标又会被变换为片段输入到片段着色器中。
     glViewport(0, 0, self.frame.size.width, self.frame.size.height);
     
-    glBindTexture(GL_TEXTURE_2D, _texture);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, _texture_1);
+    glUniform1i(_textureSlot_1, 0);
+    
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, _texture_2);
+    glUniform1i(_textureSlot_2, 1);
 
     glBindVertexArray(_vertexArrayObject);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -154,7 +162,8 @@ GLuint indices[] = {  // Note that we start from 0!
 }
 
 - (void)setupTexture {
-    _texture = [self setupTexture:[UIImage imageNamed:@"container.jpg"]];
+    _texture_1 = [self setupTexture:[UIImage imageNamed:@"container.jpg"]];
+    _texture_2 = [self setupTexture:[UIImage imageNamed:@"awesomeface.png"]];
 }
 
 /**
@@ -284,7 +293,8 @@ GLuint indices[] = {  // Note that we start from 0!
     // 5
     _positionSlot = glGetAttribLocation(programHandle, "Position");
     _colorSlot = glGetAttribLocation(programHandle, "SourceColor");
-    _textureSlot = glGetUniformLocation(programHandle, "Texure");
+    _textureSlot_1 = glGetUniformLocation(programHandle, "Texure1");
+    _textureSlot_2 = glGetUniformLocation(programHandle, "Texure2");
     _textureCoord = glGetAttribLocation(programHandle, "TextureCoords");
     
     glEnableVertexAttribArray(_positionSlot);

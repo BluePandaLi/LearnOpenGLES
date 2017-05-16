@@ -19,6 +19,7 @@
 		D828448C1ECAA697008B9F14 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D82844891ECAA697008B9F14 /* SimpleFragment.glsl */; };
 		D828448D1ECAA697008B9F14 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */; };
 		D828448F1ECAF06F008B9F14 /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D828448E1ECAF06F008B9F14 /* container.jpg */; };
+		D82844911ECB269A008B9F14 /* awesomeface.png in Resources */ = {isa = PBXBuildFile; fileRef = D82844901ECB269A008B9F14 /* awesomeface.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		D82844891ECAA697008B9F14 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
 		D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
 		D828448E1ECAF06F008B9F14 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		D82844901ECB269A008B9F14 /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */,
 				D82844891ECAA697008B9F14 /* SimpleFragment.glsl */,
 				D828448E1ECAF06F008B9F14 /* container.jpg */,
+				D82844901ECB269A008B9F14 /* awesomeface.png */,
 				D82844601ECAA639008B9F14 /* Assets.xcassets */,
 				D82844621ECAA639008B9F14 /* LaunchScreen.storyboard */,
 				D82844651ECAA639008B9F14 /* Info.plist */,
@@ -269,6 +272,7 @@
 				D828448D1ECAA697008B9F14 /* SimpleVertex.glsl in Resources */,
 				D82844611ECAA639008B9F14 /* Assets.xcassets in Resources */,
 				D828445F1ECAA639008B9F14 /* Main.storyboard in Resources */,
+				D82844911ECB269A008B9F14 /* awesomeface.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
