@@ -217,6 +217,11 @@ GLuint indices[] = { // 注意索引从0开始!
 //    _colorSlot = glGetAttribLocation(programHandle, "SourceColor");
     glEnableVertexAttribArray(_positionSlot);
 //    glEnableVertexAttribArray(_colorSlot);
+    
+//    GLfloat timeValue = glfwGetTime();
+//    GLfloat greenValue = (sin(timeValue) / 2) + 0.5;
+    _colorSlot = glGetUniformLocation(programHandle, "SourceColor");
+    glUniform4f(_colorSlot, 1.0f, 0.0f, 0.0f, 1.0f);
 }
 
 

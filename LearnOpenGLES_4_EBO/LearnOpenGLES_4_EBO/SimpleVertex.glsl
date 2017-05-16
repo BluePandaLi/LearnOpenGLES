@@ -3,7 +3,10 @@ attribute vec4 Position; // 1
 
 varying vec4 DestinationColor; // 3
 
+uniform vec4 SourceColor;
+
 void main(void) { // 4
-    DestinationColor = vec4(1.0, 0.5, 0.2, 1.0); // 5
+    
+    DestinationColor = SourceColor;
     gl_Position = Position; // 6
 }
