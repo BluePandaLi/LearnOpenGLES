@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D82844561ECAA639008B9F14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D82844551ECAA639008B9F14 /* main.m */; };
+		D82844591ECAA639008B9F14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D82844581ECAA639008B9F14 /* AppDelegate.m */; };
+		D828445C1ECAA639008B9F14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D828445B1ECAA639008B9F14 /* ViewController.m */; };
+		D828445F1ECAA639008B9F14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D828445D1ECAA639008B9F14 /* Main.storyboard */; };
+		D82844611ECAA639008B9F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82844601ECAA639008B9F14 /* Assets.xcassets */; };
+		D82844641ECAA639008B9F14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82844621ECAA639008B9F14 /* LaunchScreen.storyboard */; };
+		D828446F1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D828446E1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.m */; };
+		D828447A1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D82844791ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.m */; };
+		D828448B1ECAA697008B9F14 /* OpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = D82844881ECAA697008B9F14 /* OpenGLView.m */; };
+		D828448C1ECAA697008B9F14 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D82844891ECAA697008B9F14 /* SimpleFragment.glsl */; };
+		D828448D1ECAA697008B9F14 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */; };
+		D828448F1ECAF06F008B9F14 /* container.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D828448E1ECAF06F008B9F14 /* container.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D828446B1ECAA639008B9F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D82844491ECAA639008B9F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82844501ECAA639008B9F14;
+			remoteInfo = LearnOpenGLES_5_Textures;
+		};
+		D82844761ECAA639008B9F14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D82844491ECAA639008B9F14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D82844501ECAA639008B9F14;
+			remoteInfo = LearnOpenGLES_5_Textures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D82844511ECAA639008B9F14 /* LearnOpenGLES_5_Textures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGLES_5_Textures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82844551ECAA639008B9F14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D82844571ECAA639008B9F14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D82844581ECAA639008B9F14 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D828445A1ECAA639008B9F14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D828445B1ECAA639008B9F14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D828445E1ECAA639008B9F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D82844601ECAA639008B9F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D82844631ECAA639008B9F14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D82844651ECAA639008B9F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D828446A1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnOpenGLES_5_TexturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828446E1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnOpenGLES_5_TexturesTests.m; sourceTree = "<group>"; };
+		D82844701ECAA639008B9F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82844751ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnOpenGLES_5_TexturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82844791ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnOpenGLES_5_TexturesUITests.m; sourceTree = "<group>"; };
+		D828447B1ECAA639008B9F14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D82844871ECAA697008B9F14 /* OpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView.h; sourceTree = "<group>"; };
+		D82844881ECAA697008B9F14 /* OpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenGLView.m; sourceTree = "<group>"; };
+		D82844891ECAA697008B9F14 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleFragment.glsl; sourceTree = "<group>"; };
+		D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimpleVertex.glsl; sourceTree = "<group>"; };
+		D828448E1ECAF06F008B9F14 /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D828444E1ECAA639008B9F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844671ECAA639008B9F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844721ECAA639008B9F14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D82844481ECAA639008B9F14 = {
+			isa = PBXGroup;
+			children = (
+				D82844531ECAA639008B9F14 /* LearnOpenGLES_5_Textures */,
+				D828446D1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests */,
+				D82844781ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests */,
+				D82844521ECAA639008B9F14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D82844521ECAA639008B9F14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D82844511ECAA639008B9F14 /* LearnOpenGLES_5_Textures.app */,
+				D828446A1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.xctest */,
+				D82844751ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D82844531ECAA639008B9F14 /* LearnOpenGLES_5_Textures */ = {
+			isa = PBXGroup;
+			children = (
+				D82844571ECAA639008B9F14 /* AppDelegate.h */,
+				D82844581ECAA639008B9F14 /* AppDelegate.m */,
+				D828445A1ECAA639008B9F14 /* ViewController.h */,
+				D828445B1ECAA639008B9F14 /* ViewController.m */,
+				D828445D1ECAA639008B9F14 /* Main.storyboard */,
+				D82844871ECAA697008B9F14 /* OpenGLView.h */,
+				D82844881ECAA697008B9F14 /* OpenGLView.m */,
+				D828448A1ECAA697008B9F14 /* SimpleVertex.glsl */,
+				D82844891ECAA697008B9F14 /* SimpleFragment.glsl */,
+				D828448E1ECAF06F008B9F14 /* container.jpg */,
+				D82844601ECAA639008B9F14 /* Assets.xcassets */,
+				D82844621ECAA639008B9F14 /* LaunchScreen.storyboard */,
+				D82844651ECAA639008B9F14 /* Info.plist */,
+				D82844541ECAA639008B9F14 /* Supporting Files */,
+			);
+			path = LearnOpenGLES_5_Textures;
+			sourceTree = "<group>";
+		};
+		D82844541ECAA639008B9F14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D82844551ECAA639008B9F14 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D828446D1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D828446E1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.m */,
+				D82844701ECAA639008B9F14 /* Info.plist */,
+			);
+			path = LearnOpenGLES_5_TexturesTests;
+			sourceTree = "<group>";
+		};
+		D82844781ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D82844791ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.m */,
+				D828447B1ECAA639008B9F14 /* Info.plist */,
+			);
+			path = LearnOpenGLES_5_TexturesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D82844501ECAA639008B9F14 /* LearnOpenGLES_5_Textures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D828447E1ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_Textures" */;
+			buildPhases = (
+				D828444D1ECAA639008B9F14 /* Sources */,
+				D828444E1ECAA639008B9F14 /* Frameworks */,
+				D828444F1ECAA639008B9F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnOpenGLES_5_Textures;
+			productName = LearnOpenGLES_5_Textures;
+			productReference = D82844511ECAA639008B9F14 /* LearnOpenGLES_5_Textures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D82844691ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82844811ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_TexturesTests" */;
+			buildPhases = (
+				D82844661ECAA639008B9F14 /* Sources */,
+				D82844671ECAA639008B9F14 /* Frameworks */,
+				D82844681ECAA639008B9F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D828446C1ECAA639008B9F14 /* PBXTargetDependency */,
+			);
+			name = LearnOpenGLES_5_TexturesTests;
+			productName = LearnOpenGLES_5_TexturesTests;
+			productReference = D828446A1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D82844741ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D82844841ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_TexturesUITests" */;
+			buildPhases = (
+				D82844711ECAA639008B9F14 /* Sources */,
+				D82844721ECAA639008B9F14 /* Frameworks */,
+				D82844731ECAA639008B9F14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D82844771ECAA639008B9F14 /* PBXTargetDependency */,
+			);
+			name = LearnOpenGLES_5_TexturesUITests;
+			productName = LearnOpenGLES_5_TexturesUITests;
+			productReference = D82844751ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D82844491ECAA639008B9F14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = BluePandaLi;
+				TargetAttributes = {
+					D82844501ECAA639008B9F14 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MLM6EQV39M;
+						ProvisioningStyle = Automatic;
+					};
+					D82844691ECAA639008B9F14 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MLM6EQV39M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D82844501ECAA639008B9F14;
+					};
+					D82844741ECAA639008B9F14 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = MLM6EQV39M;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D82844501ECAA639008B9F14;
+					};
+				};
+			};
+			buildConfigurationList = D828444C1ECAA639008B9F14 /* Build configuration list for PBXProject "LearnOpenGLES_5_Textures" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D82844481ECAA639008B9F14;
+			productRefGroup = D82844521ECAA639008B9F14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D82844501ECAA639008B9F14 /* LearnOpenGLES_5_Textures */,
+				D82844691ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests */,
+				D82844741ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D828444F1ECAA639008B9F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D82844641ECAA639008B9F14 /* LaunchScreen.storyboard in Resources */,
+				D828448F1ECAF06F008B9F14 /* container.jpg in Resources */,
+				D828448C1ECAA697008B9F14 /* SimpleFragment.glsl in Resources */,
+				D828448D1ECAA697008B9F14 /* SimpleVertex.glsl in Resources */,
+				D82844611ECAA639008B9F14 /* Assets.xcassets in Resources */,
+				D828445F1ECAA639008B9F14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844681ECAA639008B9F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844731ECAA639008B9F14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D828444D1ECAA639008B9F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828445C1ECAA639008B9F14 /* ViewController.m in Sources */,
+				D82844591ECAA639008B9F14 /* AppDelegate.m in Sources */,
+				D82844561ECAA639008B9F14 /* main.m in Sources */,
+				D828448B1ECAA697008B9F14 /* OpenGLView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844661ECAA639008B9F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828446F1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D82844711ECAA639008B9F14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D828447A1ECAA639008B9F14 /* LearnOpenGLES_5_TexturesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D828446C1ECAA639008B9F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82844501ECAA639008B9F14 /* LearnOpenGLES_5_Textures */;
+			targetProxy = D828446B1ECAA639008B9F14 /* PBXContainerItemProxy */;
+		};
+		D82844771ECAA639008B9F14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D82844501ECAA639008B9F14 /* LearnOpenGLES_5_Textures */;
+			targetProxy = D82844761ECAA639008B9F14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D828445D1ECAA639008B9F14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D828445E1ECAA639008B9F14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D82844621ECAA639008B9F14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D82844631ECAA639008B9F14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D828447C1ECAA639008B9F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D828447D1ECAA639008B9F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D828447F1ECAA639008B9F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_Textures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.LearnOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D82844801ECAA639008B9F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_Textures/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.LearnOpenGLES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D82844821ECAA639008B9F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_TexturesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.LearnOpenGLES-5-TexturesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnOpenGLES_5_Textures.app/LearnOpenGLES_5_Textures";
+			};
+			name = Debug;
+		};
+		D82844831ECAA639008B9F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_TexturesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.LearnOpenGLES-5-TexturesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnOpenGLES_5_Textures.app/LearnOpenGLES_5_Textures";
+			};
+			name = Release;
+		};
+		D82844851ECAA639008B9F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_TexturesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.LearnOpenGLES-5-TexturesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LearnOpenGLES_5_Textures;
+			};
+			name = Debug;
+		};
+		D82844861ECAA639008B9F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = MLM6EQV39M;
+				INFOPLIST_FILE = LearnOpenGLES_5_TexturesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baidu.LearnOpenGLES-5-TexturesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LearnOpenGLES_5_Textures;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D828444C1ECAA639008B9F14 /* Build configuration list for PBXProject "LearnOpenGLES_5_Textures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828447C1ECAA639008B9F14 /* Debug */,
+				D828447D1ECAA639008B9F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D828447E1ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_Textures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D828447F1ECAA639008B9F14 /* Debug */,
+				D82844801ECAA639008B9F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D82844811ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_TexturesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82844821ECAA639008B9F14 /* Debug */,
+				D82844831ECAA639008B9F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D82844841ECAA639008B9F14 /* Build configuration list for PBXNativeTarget "LearnOpenGLES_5_TexturesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D82844851ECAA639008B9F14 /* Debug */,
+				D82844861ECAA639008B9F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D82844491ECAA639008B9F14 /* Project object */;
+}
