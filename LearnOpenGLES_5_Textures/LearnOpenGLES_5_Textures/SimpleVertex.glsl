@@ -1,10 +1,12 @@
-attribute vec4 Position;
-attribute vec4 SourceColor;
-attribute vec2 TextureCoords;
+#version 300 es
+
+in vec4 Position;
+in vec4 SourceColor;
+in vec2 TextureCoords;
 uniform mat4 ProjectionMatrix;
 
-varying vec4 DestinationColor;
-varying vec2 DestinationCoords;
+out vec4 DestinationColor;
+out vec2 DestinationCoords;
 
 void main(void) {
     
