@@ -8,6 +8,7 @@
 
 #import "OpenGLView.h"
 #import <QuartzCore/QuartzCore.h>
+#import <GLKit/GLKit.h>
 #include <OpenGLES/ES3/gl.h>
 #include <OpenGLES/ES3/glext.h>
 
@@ -44,6 +45,7 @@ GLuint indices[] = {  // Note that we start from 0!
 + (Class)layerClass {
     return [CAEAGLLayer class];
 }
+
 
 -(void)awakeFromNib {
     [super awakeFromNib];
@@ -131,7 +133,7 @@ GLuint indices[] = {  // Note that we start from 0!
         glVertexAttribPointer(_colorSlot, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLfloat*)(sizeof(GLfloat) * 3));
         glEnableVertexAttribArray(_colorSlot);
         
-        glVertexAttribPointer(_textureCoord, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLfloat*)(sizeof(GLfloat) * 3));
+        glVertexAttribPointer(_textureCoord, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(GLfloat), (GLfloat*)(sizeof(GLfloat) * 6));
         glEnableVertexAttribArray(_textureCoord);
     }
     
@@ -293,6 +295,7 @@ GLuint indices[] = {  // Note that we start from 0!
     // 5
     _positionSlot = glGetAttribLocation(programHandle, "Position");
     _colorSlot = glGetAttribLocation(programHandle, "SourceColor");
+    //采样器
     _textureSlot_1 = glGetUniformLocation(programHandle, "Texure1");
     _textureSlot_2 = glGetUniformLocation(programHandle, "Texure2");
     _textureCoord = glGetAttribLocation(programHandle, "TextureCoords");
@@ -301,8 +304,10 @@ GLuint indices[] = {  // Note that we start from 0!
     glEnableVertexAttribArray(_colorSlot);
     glEnableVertexAttribArray(_textureCoord);
     
-    //直接赋值颜色
-//    glVertexAttrib4f(_colorSlot, 1.0, 0.0, 0.0f, 1.0f);
+    GLuint projectionMatrix = glGetUniformLocation(programHandle, "ProjectionMatrix");
+    CGFloat ratio = self.frame.size.width / self.frame.size.height;
+    GLKMatrix4 orth = GLKMatrix4MakeOrtho(-ratio, ratio, - 1, 1, -1, 1);
+    glUniformMatrix4fv(projectionMatrix, 1, GL_FALSE, orth.m);
 }
 
 
