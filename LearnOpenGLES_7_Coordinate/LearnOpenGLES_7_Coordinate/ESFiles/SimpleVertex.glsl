@@ -17,6 +17,6 @@ void main(void) {
     DestinationColor = SourceColor;
     DestinationCoords = TextureCoords;
     
-//    gl_Position = projection * view * model * vec4(Position, 1.0f);
-    gl_Position = ortho * vec4(Position, 1.0f);
+    gl_Position = projection * view * model * vec4(Position, 1.0f);
+//    gl_Position = ortho * vec4(Position, 1.0f);
 }

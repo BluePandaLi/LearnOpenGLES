@@ -12,5 +12,5 @@ out vec4 color;
 
 void main(void) {
     
-    color = mix(texture(Texure1, DestinationCoords), texture(Texure2, DestinationCoords), 0.2) * DestinationColor;
+    color = mix(texture(Texure1, DestinationCoords), texture(Texure2, DestinationCoords), 0.2);
 }

@@ -17,13 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    CGFloat scale_screen = [UIScreen mainScreen].scale;
-    
-    UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"awesomeface.png"]];
-    [self.view addSubview:imageView];
-    imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 512.0 / scale_screen, 512.0 / scale_screen);
-    imageView.center = self.view.center;
 }
 
 

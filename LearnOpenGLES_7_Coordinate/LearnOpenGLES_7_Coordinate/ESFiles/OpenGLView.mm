@@ -48,6 +48,7 @@ GLuint indices[] = {  // Note that we start from 0!
     1, 2, 3  // Second Triangle
 };
 
+
 + (Class)layerClass {
     return [CAEAGLLayer class];
 }
@@ -56,14 +57,14 @@ GLuint indices[] = {  // Note that we start from 0!
 -(void)awakeFromNib {
     [super awakeFromNib];
     
-//    [self setupLayer];
-//    [self setupContext];
-//    [self setupRenderBuffer];
-//    [self setupFrameBuffer];
-//    [self compileShaders];
-//    [self setupVAO];
-//    [self setupTexture];
-//    [self render];
+    [self setupLayer];
+    [self setupContext];
+    [self setupRenderBuffer];
+    [self setupFrameBuffer];
+    [self compileShaders];
+    [self setupVAO];
+    [self setupTexture];
+    [self render];
 }
 
 - (void)setupLayer {
@@ -312,41 +313,41 @@ GLuint indices[] = {  // Note that we start from 0!
     
     //模型矩阵
     //局部空间 -> 世界空间
-//    GLuint modelLoc     = glGetUniformLocation(programHandle, "model");
-//    glm::mat4 model;
-//    model = glm::rotate(model, -70.0f, glm::vec3(1.0f, 0.0f, 0.0f));
-//    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-//    
-//    //观察矩阵
-//    //世界空间 -> 观察空间、摄像机空间、视觉空间
-//    GLuint viewLoc      = glGetUniformLocation(programHandle, "view");
-//    glm::mat4 view;
-//    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-//    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-//
-//    //投影矩阵
-//    //透视投影
-//    GLuint projectionLoc = glGetUniformLocation(programHandle, "projection");
-//    glm::mat4 projection;
-//    projection = glm::perspective(45.0f, float(self.frame.size.width / self.frame.size.height), 0.1f, 100.0f);
-//    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+    GLuint modelLoc     = glGetUniformLocation(programHandle, "model");
+    glm::mat4 model;
+    model = glm::rotate(model, -70.0f, glm::vec3(1.0f, 0.0f, 0.0f));
+    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+    
+    //观察矩阵
+    //世界空间 -> 观察空间、摄像机空间、视觉空间
+    GLuint viewLoc      = glGetUniformLocation(programHandle, "view");
+    glm::mat4 view;
+    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+
+    //投影矩阵
+    //透视投影
+    GLuint projectionLoc = glGetUniformLocation(programHandle, "projection");
+    glm::mat4 projection;
+    projection = glm::perspective(45.0f, float(self.frame.size.width / self.frame.size.height), 0.1f, 100.0f);
+    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
     
     //正交矩阵
-    GLuint orthoLoc = glGetUniformLocation(programHandle, "ortho");
-    glm::mat4 ortho;
-    GLfloat width = self.frame.size.width;
-    GLfloat height = self.frame.size.height;
-    
-    GLfloat scale =  self.frame.size.height / 512.0;
-    
-    if (width <= height) {
-        ortho = glm::ortho(-0.5 * scale, 0.5 * scale, -0.5 * scale * height / width, 0.5 * scale * height / width, -10.0, 10.0);
-    } else {
-        
-        ortho = glm::ortho(0.5 * scale * width/ height, 0.5 * scale * width/ height, -0.5 * scale, 0.5 * scale, -10.0, 10.0);
-    }
-    
-    glUniformMatrix4fv(orthoLoc, 1, GL_FALSE, glm::value_ptr(ortho));
+//    GLuint orthoLoc = glGetUniformLocation(programHandle, "ortho");
+//    glm::mat4 ortho;
+//    GLfloat width = self.frame.size.width;
+//    GLfloat height = self.frame.size.height;
+//    
+//    GLfloat scale =  self.frame.size.height / 512.0;
+//    
+//    if (width <= height) {
+//        ortho = glm::ortho(-0.5 * scale, 0.5 * scale, -0.5 * scale * height / width, 0.5 * scale * height / width, -10.0, 10.0);
+//    } else {
+//        
+//        ortho = glm::ortho(0.5 * scale * width/ height, 0.5 * scale * width/ height, -0.5 * scale, 0.5 * scale, -10.0, 10.0);
+//    }
+//    
+//    glUniformMatrix4fv(orthoLoc, 1, GL_FALSE, glm::value_ptr(ortho));
 }
 
 
